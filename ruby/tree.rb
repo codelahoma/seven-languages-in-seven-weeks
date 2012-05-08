@@ -23,8 +23,7 @@ class Tree
   end
 end
 
-ruby_tree = Tree.new({ 'ruby' => { 'MacRuby' => {}, 'JRuby' => {}}})
-
+ruby_tree = Tree.new({'grandpa' => { 'dad' => {'child 1' => {}, 'child 2' => {} }, 'uncle' => {'child 3' => {}, 'child 4' => {} } } })
 puts "Visiting a node"
 ruby_tree.visit {|node| puts node.node_name}
 puts
