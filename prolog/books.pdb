@@ -1,0 +1,8 @@
+author(the_stand, king).
+author(carrie, king).
+author(coma, crichton).
+author(dune, herbert).
+author(friday, heinlein).
+
+written_by(A, B) :- author(B, A).
+

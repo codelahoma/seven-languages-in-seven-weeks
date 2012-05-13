@@ -1,0 +1,4 @@
+minList([A],A).
+minList([A|List],Min) :-
+  minList(List,Min1),
+  (A<Min1, Min=A; A>=Min1, Min=Min1).

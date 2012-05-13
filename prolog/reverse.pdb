@@ -1,0 +1,5 @@
+myreverse([],[]).
+myreverse([X|R],Reversed) :-
+  myreverse(R, RevRest),
+  append(RevRest, [X], Reversed).
+

@@ -1,0 +1,20 @@
+plays(guitar, may).
+plays(guitar, atkins).
+plays(guitar, clapton).
+plays(piano, john).
+plays(piano, mercury).
+plays(drums, pert).
+plays(drums, rich).
+
+genre(jazz, rich).
+genre(rock, pert).
+genre(rock, mercury).
+genre(pop, john).
+genre(blues, clapton).
+genre(jazz, atkins).
+genre(rock, may).
+
+genre_instrument(G, I, P) :-
+  plays(I,P),
+  genre(G,P).
+
